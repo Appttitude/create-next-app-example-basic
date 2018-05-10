@@ -14,7 +14,7 @@ const pushNotification = () => {
   }
 }
 
-// Este componente es el de navegacion, no cambia 
+ 
 const Nav = () => (
   <nav>
     <figure>
