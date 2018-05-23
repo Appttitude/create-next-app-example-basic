@@ -1,16 +1,26 @@
 {
   "version": "1.0.0",
   "name": "create-next-example-app",
+  "homepage": "https://appttitude.github.io/create-next-app-example-basic/",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "aws-amplify": "^0.3.3",
+    "aws-amplify-react": "^0.1.43",
     "axios": "^0.18.0",
+    "install": "^0.11.0",
     "next": "^6.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "uid": "0.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }

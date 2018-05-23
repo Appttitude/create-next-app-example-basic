@@ -6,6 +6,14 @@ import Nav from '../components/nav'
 import axios from 'axios'
 import uid from 'uid'
 
+//conectando a aws
+// import Amplify from 'aws-amplify';
+// import awsmobile from './YOUR-PATH-TO/aws-exports';
+// import awsmobile from './aws-exports';
+// import aws_exports from '../aws-exports';
+
+
+// Amplify.configure(awsmobile); 
 
 export default class extends React.Component {
   static async getInitialProps({ query }) {
@@ -18,11 +26,12 @@ export default class extends React.Component {
 
   render() {
 
-
-    return (
+      return (
       <div>
         <Head title="Titulo del navegador" />
         <Nav />
+
+         {/* {this.notificationClick()} */}
 
         {/* Aqui se crea la paginación */}
         {this.renderPaginacion()}

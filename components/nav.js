@@ -19,7 +19,7 @@ const Nav = () => (
   <nav>
     <figure>
       <img src="https://move.appttitude.com/images/logo.png" />
-       <button>Click para recibir notificaciones</button>
+       {/* <button>Click para recibir notificaciones</button> */}
     </figure>
 
     <ul>
